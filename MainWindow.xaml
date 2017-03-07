@@ -1,0 +1,346 @@
+﻿<Window xmlns:Futuristic_Tech_UI="clr-namespace:Futuristic_Tech_UI"  x:Class="Futuristic_Tech_UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="800" WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None">
+    <Window.Background>
+        <SolidColorBrush Color="Black"/>
+    </Window.Background>
+    <Grid x:Name="Root">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2">
+            <Border.OpacityMask>
+                <RadialGradientBrush GradientOrigin="0.5,0.8">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Offset="1"/>
+                </RadialGradientBrush>
+            </Border.OpacityMask>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Color="#FF000000" Offset="0.25" />
+                    <GradientStop Color="#FF333333" Offset="0.5" />
+                    <GradientStop Color="#FF555555" Offset="0.5" />
+                    <GradientStop Color="#FF000000" Offset="0.75" />
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Path x:Name="kuwait_outline" Grid.Column="1" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+            Data="M 206.96875 0 L 176.4375 0.125 C 142.31738 0.248523 144.66466 0.065802 135.90625 2.9375 C 131.91777 4.245237 129.70702 4.724403 125.0625 5.3125 C 116.66202 6.376181 113.37612 7.194757 108.8125 9.3125 C 105.17654 10.999759 104.55759 11.426588 101.53125 14.46875 C 99.714289 16.295212 98.21875 18.007571 98.21875 18.28125 C 98.21875 19.227392 95.297679 23.037775 92.21875 26.0625 C 90.518886 27.73244 88.236607 30.062769 87.15625 31.25 C 86.075893 32.437232 84.423982 33.840805 83.5 34.375 C 81.528303 35.514931 80.71875 36.544529 80.71875 37.90625 C 80.71875 39.775732 79.686353 41.61108 77.9375 42.84375 C 77.015696 43.49348 75.580432 44.65575 74.75 45.40625 C 73.919568 46.15676 73.054814 46.78125 72.84375 46.78125 C 72.632682 46.78125 71.284414 47.86161 69.84375 49.1875 C 66.581971 52.18943 64.356175 54.03936 63.3125 54.59375 C 62.870536 54.82851 62.5 55.25701 62.5 55.5625 C 62.5 55.86799 61.745536 56.87975 60.8125 57.8125 C 59.879464 58.74524 58.240911 60.40069 57.1875 61.5 C 56.031343 62.70653 54.288692 64.03966 52.75 64.84375 C 51.348053 65.57637 49.195768 66.78052 48 67.53125 C 46.804232 68.28197 45.201547 69.12566 44.40625 69.40625 C 41.906715 70.28814 40.582078 71.08612 38.84375 72.84375 C 37.916557 73.78124 35.934413 75.25571 34.40625 76.09375 C 30.400853 78.29028 26.262239 80.90984 23.59375 82.9375 C 20.838683 85.03096 14.726947 88.0411 10.03125 89.625 C 8.177308 90.25035 5.3648082 91.432 3.78125 92.25 C 0.97849547 93.6978 0.93943717 93.7235 2.15625 93.8125 C 2.84375 93.86278 13.294643 94.47599 25.375 95.15625 C 37.455358 95.83651 73.218752 97.92423 104.84375 99.8125 C 161.30796 103.18386 162.3808 103.25543 164.96875 104.15625 C 166.96407 104.85079 168.25185 105.64103 170.3125 107.375 C 171.80945 108.63463 174.15625 110.32678 175.53125 111.125 C 176.90625 111.92323 178.91965 113.40732 180 114.4375 C 181.08036 115.46768 182.76786 116.7683 183.75 117.3125 C 186.02757 118.57447 187.05194 119.84861 188.09375 122.71875 C 189.01115 125.24617 189.11417 127.00247 188.4375 128.875 C 187.91011 130.33442 188.34914 133.60526 189.25 134.90625 C 189.56581 135.36233 191.0907 136.36634 192.625 137.125 C 194.58585 138.09459 195.70247 138.90346 196.40625 139.875 C 197.19335 140.96157 198.61017 141.89189 203 144.21875 C 207.22204 146.45668 208.59375 147.35978 208.59375 147.875 C 208.59375 148.50794 208.90529 148.5545 212.96875 148.5625 C 230.26294 148.59774 334.65625 147.66112 334.65625 147.46875 C 334.65625 147.33599 333.76276 146.43798 332.6875 145.5 C 330.6454 143.71861 329.39105 141.37263 329.75 140 C 329.85423 139.60128 329.9057 139.27925 329.875 139.28125 C 329.84429 139.28338 329.02676 139.51998 328.0625 139.8125 C 325.92337 140.4614 324.1574 140.50456 323.6875 139.90625 C 323.49466 139.66071 323.22031 138.88526 323.09375 138.21875 C 322.83524 136.85741 323.30404 136.0625 324.34375 136.0625 C 324.88687 136.0625 324.99109 135.86782 324.8125 135.15625 C 324.62877 134.42422 324.74352 134.20574 325.53125 133.90625 C 326.05651 133.70652 326.86631 133.66143 327.34375 133.78125 C 328.13832 133.98067 328.21875 133.88547 328.21875 132.75 C 328.21875 132.03575 328.54257 131.10429 328.96875 130.5625 L 329.6875 129.625 L 327.5 129.625 C 324.65436 129.625 317.03729 127.17041 315.46875 125.75 C 314.88707 125.22325 313.7067 124.19687 312.8125 123.46875 C 311.91831 122.74064 310.90772 121.59915 310.59375 120.9375 C 310.0684 119.83043 310.07471 119.59581 310.625 117.875 C 311.30672 115.74323 311.07463 115.35375 309.09375 115.34375 C 307.67442 115.33665 302.28485 113.97821 300.90625 113.28125 C 300.31697 112.98333 299.28125 112.28895 298.59375 111.75 C 297.90625 111.21105 296.27309 110.22432 295 109.5625 C 293.48411 108.77447 291.50432 107.18944 289.21875 104.96875 C 285.75281 101.60122 284.71109 99.99633 285.15625 98.59375 C 285.31878 98.08165 284.96312 97.6068 283.59375 96.5625 C 282.2216 95.51609 281.69222 94.84502 281.40625 93.75 C 281.19959 92.9587 280.63295 91.50285 280.15625 90.53125 C 279.67955 89.55965 279.28125 88.33197 279.28125 87.78125 C 279.28125 87.23054 278.99414 86.46289 278.625 86.09375 C 278.25587 85.72461 277.25366 84.49693 276.40625 83.34375 C 275.55885 82.19056 274.64247 81.07668 274.375 80.875 C 273.80698 80.44668 273.23095 78.20315 273.21875 76.375 C 273.21407 75.67168 273.63475 74.31008 274.125 73.34375 C 274.61525 72.37743 274.99928 71.45982 275 71.3125 C 275.00286 70.80037 273.0026 71.06635 272.125 71.6875 C 271.43096 72.17874 270.52597 72.3125 267.8125 72.3125 C 264.84164 72.3125 264.20472 72.19098 263.3125 71.53125 C 262.74225 71.10959 261.17381 70.17791 259.8125 69.46875 C 258.45118 68.75958 257.05747 67.99001 256.71875 67.75 C 256.21162 67.39068 255.77021 67.49923 254.21875 68.28125 C 252.28802 69.25443 246.42113 71.0705 245.25 71.0625 C 244.89064 71.06001 243.58707 71.42997 242.375 71.90625 C 238.72032 73.34234 237.55708 73.58521 232.09375 73.8125 L 226.84375 74.03125 L 225.75 72.90625 C 224.49677 71.65302 224.31844 70.26749 225.25 68.9375 C 225.82491 68.11668 225.81672 68.0707 225.15625 68.34375 C 224.33351 68.68388 205.52597 69.36441 204.40625 69.09375 C 203.27747 68.82091 202.53854 67.96487 202.75 67.15625 C 203.04936 66.01151 205.93183 64.74438 208.75 64.53125 C 210.73466 64.38117 211.97472 64.00458 214.78125 62.6875 C 216.72565 61.775 218.81855 60.61952 219.40625 60.125 C 219.99395 59.63049 221.45621 58.75309 222.65625 58.1875 C 223.85629 57.62191 225.40625 56.83502 226.09375 56.4375 C 229.78271 54.30448 234.8095 52.16048 237.03125 51.78125 C 239.54461 51.35225 242.96077 50.28475 244.8125 49.34375 C 245.39718 49.04663 246.81279 47.86106 247.9375 46.71875 C 250.69944 43.9136 252.45932 43.37571 258.75 43.375 C 262.77613 43.37461 263.57229 43.46228 264.65625 44.09375 C 265.34375 44.49425 266.0561 45.19069 266.25 45.625 C 266.57425 46.35126 266.86129 46.40625 269.6875 46.40625 C 273.55691 46.40625 275.96376 47.10435 277.15625 48.5625 C 277.95535 49.53964 278.51936 49.75276 282.15625 50.53125 C 286.93435 51.55404 290.1762 51.48965 289.8125 50.34375 C 289.56178 49.55378 286.89469 46.82605 284.28125 44.6875 C 282.49616 43.22677 279.11717 40.076332 276.28125 37.28125 C 275.67856 36.687243 275.01743 35.898925 274.8125 35.53125 C 274.50239 34.97486 274.32391 34.940655 273.6875 35.28125 C 273.26695 35.506322 272.36271 35.6875 271.6875 35.6875 C 268.96486 35.6875 260.6158 28.983884 257.6875 24.4375 C 256.13563 22.028137 255.71875 20.649993 255.71875 18 L 255.71875 15.75 L 253.34375 13.6875 C 251.98177 12.493531 250.70766 10.997931 250.34375 10.1875 L 249.6875 8.75 L 228.34375 4.375 L 206.96875 0 z M 289.15625 10.78125 C 288.79591 10.794768 288.42679 10.832641 288.03125 10.875 C 285.8429 11.109349 285.71116 11.150998 285.9375 11.875 C 286.07051 12.300472 286.58036 13.178153 287.09375 13.8125 C 287.96937 14.894441 288.14862 14.945701 289.65625 14.71875 C 291.79215 14.397224 294.3638 14.559624 296 15.09375 C 297.04486 15.434839 297.3504 15.713999 297.4375 16.46875 C 297.52568 17.232455 297.32277 17.558373 296.46875 18 C 295.87726 18.305873 295.05393 18.5625 294.625 18.5625 C 293.02144 18.5625 291.09375 19.362501 291.09375 20.03125 C 291.09375 21.798861 286.82464 22.700182 284.46875 21.4375 C 282.72955 20.505347 282.69649 20.517563 282.25 21.5 C 282.00104 22.047828 282.00058 22.480754 282.25 22.875 C 282.52321 23.306843 282.41095 23.781674 281.8125 24.75 C 281.03897 26.001588 280.59686 26.221316 279.125 26.0625 C 278.74672 26.021682 278.18227 26.363715 277.84375 26.8125 C 277.33377 27.488592 276.92801 27.60355 275.53125 27.53125 C 274.17539 27.461066 273.75666 27.597982 273.34375 28.1875 C 273.02394 28.644101 272.39797 28.91113 271.6875 28.9375 C 270.98585 28.96354 271.46773 29.157634 272.9375 29.40625 C 274.45003 29.6621 275.63372 30.079254 276.15625 30.5625 C 276.61016 30.982297 277.63921 31.677428 278.46875 32.09375 C 279.6059 32.664453 280.06163 33.126662 280.28125 34 C 280.52532 34.970592 280.94146 35.339727 282.875 36.28125 C 285.24221 37.433941 288.16134 40.311346 289.40625 42.71875 C 290.12584 44.11028 292.3232 45.95619 293.75 46.375 C 295.82509 46.9841 301.8527 46.82749 304.84375 46.0625 C 308.91513 45.02122 320.04017 39.42252 322.875 37 C 324.94382 35.232076 325.09231 34.681588 324.125 32.59375 C 323.2335 30.669532 322.52225 30.065801 317.34375 26.96875 C 315.77232 26.028942 313.34375 24.469445 311.96875 23.5 C 309.64894 21.864416 303.42396 17.75557 296.53125 13.3125 C 293.48677 11.350015 291.67865 10.686626 289.15625 10.78125 z "
+              Stroke="White" StrokeThickness="2"  Stretch="Fill" Opacity="0.5" Margin="0,0,0,75">
+            <!--<Path.Effect>
+                <DropShadowEffect ShadowDepth="5"
+                          Color="White"
+                          Opacity=".9"
+                          BlurRadius="50"/>
+            </Path.Effect>-->
+            <Path.Fill>
+                <RadialGradientBrush RadiusY="0.573" RadiusX="1.667" GradientOrigin="1.01,1.035">
+                    <GradientStop Color="#FF06183C" Offset="0.6"/>
+                    <GradientStop Color="#FF0D60A3"/>
+                </RadialGradientBrush>
+            </Path.Fill>
+            <!--<Path.RenderTransform>
+                <TransformGroup>
+                    -->
+            <!-- First rotate, then scale, then skew! -->
+            <!--
+                    <RotateTransform Angle="0"/>
+                    <ScaleTransform ScaleX="2" ScaleY="1"/>
+                    <SkewTransform AngleX="0"/>
+                </TransformGroup>
+
+            </Path.RenderTransform>-->
+        </Path>
+        <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="3" Margin="10,10,10,10">
+
+            <Grid Width="300" Height="500" VerticalAlignment="Bottom" HorizontalAlignment="Left" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Path 
+            Stretch="Fill" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2"
+              Data="m 5.6800848,299.62447 31.4433262,0.20286 71.203919,71.60964 0.20286,10.34587 -4.46292,4.66578 0.20286,16.8374 3.44862,3.65148 -0.20286,23.12606 16.63453,16.63453 1.0143,299.21875 -7.1001,7.50583 -43.006357,0 -13.591632,-13.99735 -35.500529,-0.20286 -20.2860172,-20.69174 0,-418.90625 z"
+              Stroke="White" Fill="#464646" Margin="0,-35,10,5" Opacity="0.50" />
+                <Path 
+            Stretch="Fill" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" 
+              Data="m 5.9192565,119.72381 16.9096095,0.28426 36.176508,37.80298 0.603288,93.39145 -9.255741,7.39869 0.326432,79.11788 12.375712,12.55995 -0.207797,89.66962 -17.99483,17.66083 -10.248863,0.16068 0.214723,73.68285 -22.98051,22.65169 0.124385,111.95774 75.885859,76.4557 96.795968,0.18974 8.0891,8.89351 0.0313,4.77138 -159.795977,0.5764 -27.0491645,-26.41274 0,-343.13202 9.1804035,-8.82541 0.03233,-172.67611 -9.2127355,-9.64819 0,-76.53088 z"
+              Stroke="White" Fill="#464646" Margin="0,0,-70,0" Opacity="0.50" />
+                <Path 
+            Stretch="Fill" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2"
+              Data="m 67.562031,389.02969 0,51.78321 -18.791138,19.36491 22.090345,22.66413 0.430332,150.47254 -8.463185,8.60663 -0.143443,69.85713 12.766498,12.33617 14.057492,0.14345 35.574058,-34.85685 -0.28688,-111.59928 -14.48783,-14.34438 1e-5,-120.77968 -15.778824,-15.49193 0,-14.77471 -22.951009,-23.2379 -4.016426,-0.14344 z"
+              Stroke="White" Fill="#464646" Margin="55,40,0,35" Opacity="0.50" />
+            </Grid>
+            <Path 
+            Stretch="Fill"  Width="70" 
+              Data="m 1328.5084,605.90081 25.2968,25.80397 6.6477,0 0.051,-238.24996 -11.9449,-11.8146 -0.019,-72.05801 11.9826,-11.33927 -0.1173,-58.74981 -9.6209,0.0537 -23.2205,23.13198 -0.1015,75.83976 -31.0027,30.98686 -0.048,136.12096 19.8604,19.94589 12.2362,-0.0666 0,80.39515 z"
+              Stroke="White" Fill="#464646" Margin="0,200,5,150" Opacity="0.50" HorizontalAlignment="Right" VerticalAlignment="Center" />
+
+            <Path 
+            Stretch="Fill" Height="100"
+              Data="m 569.75878,753.37695 6.31153,-6.31153 270.24812,0.57377 45.90202,-46.47579 81.47608,0.57378 14.91815,-14.91816 266.80552,-1.14755 24.0985,-28.11498 78.0334,-0.57378 0.5738,74.59078 -24.6723,25.24611 -1135.21427,-0.28689 0.14345,-3.44265 371.376,0.28689 z"
+              Stroke="White" Fill="#464646" Margin="300,200,0,0" Opacity="0.50" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+            <Path 
+            Stretch="Fill" Height="150" 
+              Data="M 1358.5983,210.88392 1358.4128,40.461251 1324.6769,6.694384 25.154661,6.4915242 5.6800848,27.994702 5.2743644,52.337923 74.652542,53.149363 90.069915,34.080507 277.10699,36.92055 l 6.49153,-5.274365 23.12606,0 0.81144,-13.794491 196.64756,-1.217161 4.53899,-4.665784 597.98103,-0.202861 5.173,4.665784 59.0323,0.202861 11.7659,12.17161 16.6345,0 27.4876,27.893273 8.6215,-0.20286 13.7945,14.098782 0.5072,55.177962 7.6072,7.70869 68.1611,0.40572 14.6059,14.60593 0.6086,50.71505 12.1716,11.56302 5.7238,0.11221 z"
+              Stroke="White" Fill="#464646" Margin="0,0,0,0" Opacity="0.50" HorizontalAlignment="Right" VerticalAlignment="Top" />
+
+
+
+            <Grid x:Name="UserInfo" HorizontalAlignment="Right" VerticalAlignment="Top" Width="180" Margin="0,30,90,0">
+                <Path Stroke="White" Margin="0" Fill="Black"
+                Data="m 178.05665,9.5337205 -9.4153,-9.18230986 -165.8752233,-0.28695 -2.21537004,3.73031996 0,13.7734604 3.04613004,2.29557 0.13847,47.48974 -3.18460004,2.1521 0.41539,9.46926 4.15380004,4.8781 46.3841093,0.28695 4.4308,-4.87811 102.737394,0.28695 19.17546,-26.010805 0.54681,-19.521611 -0.33787,-24.4826645 z">
+                    <Path.Effect>
+                        <DropShadowEffect ShadowDepth="15"
+                          Color="#007ACC"
+                          Opacity="1"
+                          BlurRadius="15"/>
+                    </Path.Effect>
+                </Path>
+                <StackPanel Width="150" Height="70" Orientation="Horizontal">
+
+                    <Grid>
+                        <Grid Name="backgroundGrid" Width="48" Height="48" Visibility="Visible">
+                            <Path Data="M50.5,4.7500001C25.232973,4.75 4.75,25.232973 4.7500001,50.5 4.75,75.767029 25.232973,96.25 50.5,96.25 75.767029,96.25 96.25,75.767029 96.25,50.5 96.25,25.232973 75.767029,4.75 50.5,4.7500001z M50.5,0C78.390381,0 101,22.609621 101,50.5 101,78.390381 78.390381,101 50.5,101 22.609621,101 0,78.390381 0,50.5 0,22.609621 22.609621,0 50.5,0z" Stretch="Fill" Fill="#FF007ACC" Name="Stroke" Visibility="Visible" />
+                        </Grid>
+                        <Path Data="F1M484.766,361.437C484.766,361.272 484.766,361.044 484.766,360.702 484.766,354.202 473.334,347.86 463.161,344.493 462.697,344.342 459.766,343.021 461.598,337.451L461.572,337.451C466.346,332.535 469.995,324.617 469.995,316.825 469.995,304.846 462.027,298.566 452.769,298.566 443.505,298.566 435.583,304.846 435.583,316.825 435.583,324.647 439.212,332.596 444.014,337.502 445.887,342.413 442.538,344.236 441.837,344.493 432.143,348 420.766,354.392 420.766,360.702 420.766,361.044 420.766,361.272 420.766,361.437L484.766,361.437z" Stretch="Uniform" Fill="#FF007ACC" Width="26" Height="26" Margin="0,0,0,0">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <TransformGroup.Children>
+                                        <RotateTransform Angle="0" />
+                                        <ScaleTransform ScaleX="1" ScaleY="1" />
+                                    </TransformGroup.Children>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                    </Grid>
+                    <StackPanel Margin="5,0,0,5" Width="100">
+                        <TextBlock x:Name="txtUser" Text="USER" FontSize="16" Foreground="#007ACC" />
+                        <Separator  
+               Height="4"
+               Width="Auto"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Bottom"                   
+               Background="#007ACC" />
+                        <TextBlock x:Name="txtDesignation" Text="DESIGNATION" FontSize="10" TextWrapping="WrapWithOverflow" Foreground="#007ACC" />
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+
+            <Grid x:Name="Logo" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Path Grid.Column="1"
+            Stretch="Fill" Height="100" Width="200" StrokeThickness="1"
+              Data="m 95.533572,15.215142 9.754178,-9.1804036 171.84567,-0.2868876 2.29511,3.7295388 0,13.7706054 -3.15577,2.2951 -0.14345,47.479899 3.29922,2.151657 -0.43034,9.467291 -4.30331,4.877089 -48.05368,0.286888 -4.59019,-4.87709 L 115.6157,85.215717 109.87795,78.90419 73.730115,36.157937 95.533572,15.215142 z"
+              Stroke="White" Margin="-30,0,0,0">
+                    <Path.Fill>
+                        <RadialGradientBrush RadiusY="0.573" RadiusX="0.667" GradientOrigin="1.01,1.035">
+                            <GradientStop Color="#FF06183C" Offset="0.81"/>
+                            <GradientStop Color="#FF0D60A3"/>
+                        </RadialGradientBrush>
+                    </Path.Fill>
+                </Path>
+                <Path x:Name="circle" Grid.Column="0"
+            Stretch="Fill" Height="100" Width="100" StrokeThickness="2"
+              Data="m 152.05043,67.572128 a 46.475792,43.46347 0 1 1 -92.951584,0 46.475792,43.46347 0 1 1 92.951584,0 z"
+              Stroke="White" Margin="0" Fill="#FF06183C" />
+                <StackPanel x:Name="Title" Grid.Column="1" Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                    <TextBlock Text="Futuristic Tech UI" Foreground="White" FontSize="20" />
+                    <TextBlock Text="POWERED BY: " Foreground="White" FontSize="10" />
+                    <TextBlock Text="BibzSoftworkz" Foreground="White" FontSize="12" />
+
+                </StackPanel>
+
+                <Path Stretch="Uniform" Fill="#FFFFFFFF" Width="68" Height="68" Margin="0,0,0,0">
+                    <Path.Data>
+                        <PathGeometry FillRule="Nonzero" Figures="M49.59375,25.5239562988281L53.7436485290527,25.7319641113281 57.4746055603027,26.3559875488281 60.7866172790527,27.3960266113281 63.6796875,28.8520812988281 66.02783203125,30.6450500488281 67.705078125,32.6958312988281 68.71142578125,35.0044250488281 69.046875,37.5708312988281 68.824951171875,40.0478820800781 68.1591796875,42.4868507385254 67.049560546875,44.8877296447754 65.49609375,47.2505226135254 63.498779296875,49.5752296447754 61.0576171875,51.8618507385254 58.172607421875,54.1103820800781 54.84375,56.3208312988281 58.76806640625,57.5893859863281 62.244140625,59.1450500488281 65.27197265625,60.9878234863281 67.8515625,63.1177062988281 69.91259765625,65.4673156738281 71.384765625,67.9692687988281 72.26806640625,70.6235656738281 72.5625,73.4302062988281 72.369873046875,76.2134094238281 71.7919921875,78.8911437988281 70.828857421875,81.4634094238281 69.48046875,83.9302062988281 67.746826171875,86.2915344238281 65.6279296875,88.5473937988281 63.123779296875,90.6977844238281 60.234375,92.7427062988281 53.7451171875,96.2290344238281 46.60546875,98.7192687988281 38.8154296875,100.213409423828 30.375,100.711456298828 27.353759765625,100.584747314453 24.7353515625,100.204620361328 22.519775390625,99.5710754394531 20.70703125,98.6841125488281 19.297119140625,97.5437316894531 18.2900390625,96.1499328613281 17.685791015625,94.5027160644531 17.484375,92.6020812988281 17.572265625,91.3188781738281 17.8359375,89.3911437988281 18.275390625,86.8188781738281 18.890625,83.6020812988281 25.5,50.3677062988281 26.0976543426514,46.9575538635254 26.296875,44.6958312988281 26.0156230926514,43.1255226135254 25.171875,41.6958312988281 28.0341796875,40.6704444885254 30.43359375,39.9380226135254 32.3701171875,39.4985694885254 33.84375,39.3520812988281 35.115234375,39.5602760314941 36.0234375,40.1848487854004 36.568359375,41.2258033752441 36.75,42.6831359863281 36.6533203125,43.5158576965332 36.36328125,45.1695289611816 35.8798828125,47.6441535949707 35.203125,50.9397277832031 29.0625,81.7629699707031 28.6113262176514,84.2054138183594 28.2890605926514,86.1846008300781 28.0957012176514,87.7005310058594 28.03125,88.7532043457031 28.7343730926514,91.3394317626953 30.8437480926514,93.1867370605469 34.359375,94.2951202392578 39.28125,94.6645812988281 43.7329063415527,94.3315811157227 47.8535118103027,93.3325805664063 51.6430625915527,91.6675796508789 55.1015625,89.3365783691406 57.9829063415527,86.5390701293945 60.0410118103027,83.4745483398438 61.2758750915527,80.1430130004883 61.6875,76.5444641113281 61.4589805603027,73.792594909668 60.7734336853027,71.3575439453125 59.6308555603027,69.2393112182617 58.03125,67.4378967285156 55.8984336853027,65.8887557983398 53.1562461853027,64.52734375 49.8046836853027,63.3536605834961 45.84375,62.3677062988281 42.65625,63.2817687988281 39.1875,63.5864562988281 36.140625,63.1645812988281 36.86279296875,60.8618469238281 37.669921875,58.9692687988281 38.56201171875,57.4868469238281 39.5390625,56.4145812988281 42.205078125,55.1138000488281 46.125,54.6802062988281 47.49609375,54.7153625488281 49.265625,54.8208312988281 53.6337852478027,51.1733741760254 56.7539024353027,47.5434913635254 58.6259727478027,43.9311866760254 59.25,40.3364562988281 59.0478515625,38.3479309082031 58.4414024353027,36.6245422363281 57.4306602478027,35.1662902832031 56.0156211853027,33.9731750488281 54.1962852478027,33.0451965332031 51.9726524353027,32.3823547363281 49.3447265625,31.9846496582031 46.3125,31.8520812988281 41.1474609375,32.1648254394531 36.12890625,33.1030578613281 31.2568359375,34.6667785644531 26.53125,36.8559875488281 21.9521484375,39.6706848144531 17.51953125,43.1108703613281 13.2333974838257,47.1765441894531 9.09375,51.8677062988281 8.1796875,49.3598937988281 7.87500047683716,46.9927062988281 8.0789794921875,44.9983215332031 8.69091796875,43.0464210510254 9.7108154296875,41.1369972229004 11.138671875,39.2700538635254 12.9744873046875,37.4455909729004 15.21826171875,35.6636085510254 17.8699951171875,33.9241027832031 20.9296875,32.2270812988281 27.61669921875,29.2944641113281 34.623046875,27.1997375488281 41.94873046875,25.9429016113281 49.59375,25.5239562988281z" />
+                    </Path.Data>
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <RotateTransform Angle="0" />
+                                <ScaleTransform ScaleX="1" ScaleY="1" />
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+            </Grid>
+            
+            <StackPanel HorizontalAlignment="Right" Margin="0,5,5,0" VerticalAlignment="Top">
+                <Button x:Name="btnClose" Content="CLOSE" Width="75" Height="30" Style="{StaticResource ButtonStyle1}" Click="btnClose_Click"/>
+                <Button x:Name="btnMin" Content="MINIMIZE" Width="75" Height="30" Style="{StaticResource ButtonStyle1}" Margin="0,5,0,0" Click="btnMin_Click"/>
+            </StackPanel>
+            
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left" Margin="100,120,0,0">
+                <!--<Button Style="{StaticResource ButtonStyle2}" Width="250" Height="80" />
+            
+            <Button Style="{StaticResource ButtonStyle3}" Width="250" Height="80" />-->
+
+                <Button Style="{StaticResource ButtonStyle4}" FontSize="15" Width="200" Height="80" Content="Menu 1" />
+                <Button Style="{StaticResource ButtonStyle4}" FontSize="15" Width="200" Height="80" Content="Menu 2" />
+                <Button Style="{StaticResource ButtonStyle4}" FontSize="15" Width="200" Height="80" Content="Menu 3" />
+                <Button Style="{StaticResource ButtonStyle4}" FontSize="15" Width="200" Height="80" Content="Menu 4" />
+
+
+            </StackPanel>
+
+            <Futuristic_Tech_UI:ucDigitalClock VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,15,10" />
+            <!--<TextBlock x:Name="txtTime" Text="10:10 AM" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,15,10" Foreground="White" FontFamily="Haettenschweiler" FontSize="18" />-->
+            <!--<Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="110" />
+            <ColumnDefinition Width="277*" />
+            <ColumnDefinition Width="51*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="110" MinHeight="3" />
+            <RowDefinition Height="*" MinHeight="3" />
+        </Grid.RowDefinitions>
+        -->
+            <!--<Grid.Background>
+            <ImageBrush ImageSource="Resources/black_green.jpg" Stretch="Fill"/>
+        </Grid.Background>-->
+            <!--
+        <Border Grid.Row="0" Grid.Column="0" Padding="6,6,3,6" Margin="0,0,0.4,0">
+            -->
+            <!--<Border.Background>
+                <ImageBrush ImageSource="Resources/koc_LOGO_BLACK-WHITE.jpg" Stretch="UniformToFill"/>
+            </Border.Background>-->
+            <!--
+
+
+        </Border>
+        -->
+            <!--<Image Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Source="Resources/black_green.jpg" Margin="0,0,-3,-3" Grid.ColumnSpan="3">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="Resources/black_green.jpg"/>
+            </Image.OpacityMask>
+        </Image>-->
+            <!--
+        <Border Grid.Row="0" Grid.RowSpan="2" Grid.ColumnSpan="3" Grid.Column="1">
+            -->
+            <!--<Border.Background>
+                <ImageBrush ImageSource="Resources/black_green.jpg" Stretch="fill" />
+            </Border.Background>-->
+            <!--
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="3" Grid.Row="3" Source="Resources/koc_BLACK-WHITE.jpg" Opacity="0.5" />
+                <dxc:ChartControl Grid.ColumnSpan="3" Grid.RowSpan="3" Grid.Column="2" Grid.Row="2" Legend="{x:Null}" Style="{StaticResource chartStyle1}" >
+                    <dxc:ChartControl.Palette>
+                        <dxc:GreenYellowPalette/>
+                    </dxc:ChartControl.Palette>
+                    <dxc:SimpleDiagram2D>
+                        <dxc:PieSeries2D DisplayName="Series 1">
+                            <dxc:SeriesPoint Argument="1" Value="6.5"/>
+                            <dxc:SeriesPoint Argument="2" Value="5.5"/>
+                            <dxc:SeriesPoint Argument="3" Value="12.5"/>
+                            <dxc:SeriesPoint Argument="4" Value="11.5"/>
+                            <dxc:SeriesPoint Argument="5" Value="18.5"/>
+                        </dxc:PieSeries2D>
+                    </dxc:SimpleDiagram2D>
+                </dxc:ChartControl>
+                <dxga:DigitalGaugeControl  Grid.Column="5" Grid.Row="3" EnableAnimation="True" Margin="-40,-30,20,10">
+                    <dxga:DigitalGaugeControl.SymbolView>
+                        <dxga:SevenSegmentsView>
+                            <dxga:SevenSegmentsView.Presentation>
+                                <dxga:DefaultSevenSegmentsPresentation FillActive="Red" FillInactive="#0F555555" />
+                            </dxga:SevenSegmentsView.Presentation>
+                        </dxga:SevenSegmentsView>
+                    </dxga:DigitalGaugeControl.SymbolView>
+                </dxga:DigitalGaugeControl>
+                <dxc:ChartControl Grid.Column="4" Grid.Row="2" Grid.ColumnSpan="2" Style="{StaticResource chartStyle1}" Margin="0,-60,-40,0">
+                    <dxc:ChartControl.Palette>
+                        <dxc:GreenYellowPalette/>
+                    </dxc:ChartControl.Palette>
+                    <dxc:ChartControl.Legend>
+                        <dxc:Legend HorizontalPosition="Right" VerticalPosition="Bottom"/>
+                    </dxc:ChartControl.Legend>
+                    <dxc:XYDiagram2D>
+                        <dxc:XYDiagram2D.DefaultPane>
+                            <dxc:Pane DomainBrush="{x:Null}" />
+                        </dxc:XYDiagram2D.DefaultPane>
+                        <dxc:LineSeries2D DisplayName="Series 2">
+                            <dxc:SeriesPoint Argument="1" Value="6.5"/>
+                            <dxc:SeriesPoint Argument="2" Value="5.5"/>
+                            <dxc:SeriesPoint Argument="3" Value="12.5"/>
+                            <dxc:SeriesPoint Argument="4" Value="11.5"/>
+                            <dxc:SeriesPoint Argument="5" Value="18.5"/>
+                        </dxc:LineSeries2D>
+                    </dxc:XYDiagram2D>
+                </dxc:ChartControl>
+                <dxc:ChartControl Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Style="{StaticResource chartStyle1}" />
+            </Grid>
+        </Border>
+
+        <Border Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Grid.ColumnSpan="2" Padding="3,0,6,0" HorizontalAlignment="Left">
+            <dxnav:TileBar Padding="0,0,0,0" Orientation="Vertical">
+                <dxnav:TileBarItem Style="{StaticResource tileStyle1}">
+                    <dxnav:TileBarItem.Content>
+
+                        <local:ucHDRTile Grid.Column="0" Header="KOC" />
+
+                    </dxnav:TileBarItem.Content>
+                </dxnav:TileBarItem>
+                <dxnav:TileBarItem Style="{StaticResource tileStyle1}">
+                    <dxnav:TileBarItem.Content>
+                        <local:ucHDRTile Grid.Column="2" Header="NK" />
+                    </dxnav:TileBarItem.Content>
+                </dxnav:TileBarItem>
+                <dxnav:TileBarItem Style="{StaticResource tileStyle1}">
+                    <dxnav:TileBarItem.Content>
+                        <local:ucHDRTile Grid.Column="2" Header="SK" />
+                    </dxnav:TileBarItem.Content>
+                </dxnav:TileBarItem>
+                <dxnav:TileBarItem Style="{StaticResource tileStyle1}">
+                    <dxnav:TileBarItem.Content>
+                        <local:ucHDRTile Grid.Column="2" Header="EK" />
+                    </dxnav:TileBarItem.Content>
+                </dxnav:TileBarItem>
+                <dxnav:TileBarItem Style="{StaticResource tileStyle1}">
+                    <dxnav:TileBarItem.Content>
+                        <local:ucHDRTile Grid.Column="2" Header="WK" />
+                    </dxnav:TileBarItem.Content>
+                </dxnav:TileBarItem>
+            </dxnav:TileBar>
+
+        </Border>
+        
+
+    </Grid>-->
+        </Grid>
+    </Grid>
+</Window>
