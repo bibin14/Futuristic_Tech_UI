@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\bninan\Documents\Visual Studio 2013\Projects\Futuristic_Tech_UI\Futuristic_Tech_UI\obj\Debug\
+c:\users\bninan\documents\visual studio 2013\Projects\Futuristic_Tech_UI\Futuristic_Tech_UI\obj\Debug\
 Futuristic_Tech_UI
 none
 false
 DEBUG;TRACE
-C:\Users\bninan\Documents\Visual Studio 2013\Projects\Futuristic_Tech_UI\Futuristic_Tech_UI\App.xaml
+c:\users\bninan\documents\visual studio 2013\Projects\Futuristic_Tech_UI\Futuristic_Tech_UI\App.xaml
 3696646414
 
 112065858816
 131478842535
 MainWindow.xaml;ucDigitalClock.xaml;ucHDRTile.xaml;
 
-True
+False
 
