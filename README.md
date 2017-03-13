@@ -1,6 +1,6 @@
 # Futuristic Tech UI (WPF)
 
 <br/>
-<img src='https://lh5.googleusercontent.com/EZaWSkSdY3aWxudc0l0C68v8N48Oz768O3x5DoISVShqtzZH0v82BUFx06UPIj-y2mx-nJXt36n0Moo=w1920-h963'></img>
+<img src="https://lh4.googleusercontent.com/F5ZSgrQb_4U5ll_FUh_gQh2BBLkZZSkKw1JGiqETSHj09-_6wbC7Dyr-Fec83UpHn3B4dYar=w1920-h950-rw" class="drive-viewer-image-img drive-viewer-focus-to-default" alt="جارٍ عرض Futuristic_Tech_UI.png" aria-hidden="true" >
 
 <br/>
