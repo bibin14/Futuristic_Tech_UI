@@ -1,6 +1,6 @@
 # Futuristic Tech UI (WPF)
 
 <br/>
-<img src="https://lh5.googleusercontent.com/_HDuOBz-566nyUWONFzMQ6DQRcSuzD-jZuWXZ2Vrp77iU24ZDpSv4Yy5zSVhlQYXJDcEszXAI1IBw6k=w1920-h963" />
+<img src="https://lh3.googleusercontent.com/AP1ly68xqchP0orAHAb5DBrJh-n_Phed5vKX89IGONvzOdL3sMqkP3IfGoZAB1DXtb-WK1OApm6WaNE" />
 
 <br/>
