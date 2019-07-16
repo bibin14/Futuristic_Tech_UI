@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows;
 
-namespace Futuristic_Tech_UI
+namespace FuturisticTechUI
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
