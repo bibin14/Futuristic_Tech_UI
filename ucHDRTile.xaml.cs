@@ -1,18 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows.Controls;
 
-namespace Futuristic_Tech_UI
+namespace FuturisticTechUI
 {
     /// <summary>
     /// Interaction logic for ucHDRTile.xaml
@@ -24,10 +12,10 @@ namespace Futuristic_Tech_UI
             InitializeComponent();
         }
 
-        public string Header { get; set; }
+        public string _Header { get; set; }
 
-        public string Production { get; set; }
+        public string _Production { get; set; }
 
-        public string ProductionDifference { get; set; }
+        public string _ProductionDifference { get; set; }
     }
 }
